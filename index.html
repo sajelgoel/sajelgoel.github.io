@@ -3,11 +3,71 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet"  href="styles.css">
+    <title>Portfolio</title>
 </head>
-<body>
-    <h1>hello world sajel here</h1>
+<body class="container">
+    <div class="self-jumbotron">
+        <div class="row">
+            <nav class="col-sm-3 offset-sm-1">
+                <ul class="row list-group">
+                    <li class="list-group-item cusror-pointer mt-4 mb-3 shadow" onclick="changeView('profile')">Profile</li>
+                    <li class="list-group-item cusror-pointer mb-3 shadow" onclick="changeView('project')">Projects</li>
+                    <li class="list-group-item cusror-pointer mb-3 shadow" onclick="changeView('contact')">Contact</li>
+                </ul>
+            </nav>
+            <main class="col-sm-6 offset-sm-1 shadow mt-2">
+                <!-- Profile -->
+                <article class="mt-3" id="profile">
+                    <h3 class="display-4 text-center">Profile</h3>
+                    <section>
+                        <strong>Application Development Analyst</strong> in <strong>Accenture</strong>
+                        <ul>
+                            <li>2+ years experience in User Interface (UI) / Front End Development</li>
+                            <li>Working on web based application in Angular 6, Angular JS 1.6, Typescript, Bootstrap 3/4, HTML5, CSS3, LESS, SASS, Javascript</li>
+                            <li>Hands on experience applying web accessibility, pixel
+                                perfect design, responsive design across various
+                                browsers(Chrome, Firefox, IE)
+                            </li>
+                            <li>
+                                Good exposure in identifying possible areas, prioritizing
+                                different issues found out in maintenance and figuring out
+                                solutions in solving bugs and defects reported by clients in
+                                production environment
+                            </li>
+                        </ul>
+                    </section>
+                </article>
+
+                <!-- Project -->
+                <article class="mt-3 text-center" id="project">
+                    <h3 class="display-4">Projects</h3>
+                    <section class="card shadow mt-3 mb-3">
+                        <div class="card-body">
+                          <h5 class="card-title">Project Name</h5>
+                          <h6 class="card-subtitle mb-2 text-muted">Status: Inprogress</h6>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                          <a href="#" class="card-link">Code</a>
+                          <a href="#" class="card-link">Live Demo</a>
+                        </div>
+                    </section>
+                      
+                </article>
+
+                <!-- Contact -->
+                <article class="mt-3 text-center" id="contact">
+                    <h3 class="display-4">Contact</h3>
+                    <section class="mt-3 mb-3">
+                        <a href="#" class="fa fa-linkedin m-2"></a>
+                        <a href="#" class="fa fa-google m-2"></a>
+                        <a href="#" class="fa fa-github m-2"></a>
+                    </section>
+                </article>
+            </main>
+        </div>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>
