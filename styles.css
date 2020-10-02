@@ -38,6 +38,12 @@ pre{
     text-decoration: none;
 }
 
+.active{
+    background-color: black!important;
+    color: white;
+    
+}
+
 
 @media only screen and (max-width: 600px) {
     .self-jumbotron{

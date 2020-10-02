@@ -12,16 +12,30 @@
     <div class="self-jumbotron">
         <div class="row">
             <nav class="col-sm-3 offset-sm-1">
-                <ul class="row list-group">
-                    <li class="list-group-item cusror-pointer mt-4 mb-3 shadow" onclick="changeView('profile')">Profile</li>
-                    <li class="list-group-item cusror-pointer mb-3 shadow" onclick="changeView('project')">Projects</li>
-                    <li class="list-group-item cusror-pointer mb-3 shadow" onclick="changeView('contact')">Contact</li>
-                </ul>
+            
+                <div class="row">
+                    <div class="card cusror-pointer mt-2 mb-2 shadow col-12" onclick="changeView('profile')" id="list-profile">
+                        <div class="card-body p-3">
+                            Profile
+                        </div>
+                    </div>
+                    <div class="card cusror-pointer mt-2 mb-2 shadow col-12" onclick="changeView('project')" id="list-project">
+                        <div class="card-body p-3">
+                            Projects
+                        </div>
+                    </div>
+                    <div class="card cusror-pointer mt-2 mb-2 shadow col-12" onclick="changeView('contact')" id="list-contact">
+                        <div class="card-body p-3">
+                            Contact
+                        </div>
+                    </div>
+                </div>
             </nav>
             <main class="col-sm-6 offset-sm-1 shadow mt-2" id="main-content">
 
                 <script>
-                    document.getElementById('main-content').style.display='none'
+                    document.getElementById('list-profile').classList.add('active');
+                    document.getElementById('main-content').style.display='none';
                 </script>
                 <!-- Profile -->
                 <article class="mt-3" id="profile">
